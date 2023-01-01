@@ -1,10 +1,12 @@
 import { pausa, iquirerMenu, leerInput } from "./helpers/inquirer.js";
+import { Busquedas } from "./models/busquedas.js";
 
 
 
 const main = async () => {
 
   let opt = '';
+  const busquedas = new Busquedas();
 
   do {
     
@@ -15,7 +17,7 @@ const main = async () => {
         // Mostrar mensaje
         const lugar = await leerInput('Ciudad: ');
         console.log(lugar);
-
+        await busquedas.ciudad(lugar);
 
 
         console.log('\nInformación de la ciudad\n'.green);

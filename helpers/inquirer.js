@@ -1,4 +1,4 @@
-import inquier from 'inquirer';
+import inquirer from 'inquirer';
 import colors from 'colors';
 
 
@@ -32,7 +32,7 @@ const iquirerMenu = async() => {
   console.log('    Seleccione una opción'.white);
   console.log('==========================='.green);
 
-  const {option} = await inquier.prompt(questions);
+  const {option} = await inquirer.prompt(questions);
 
   return option;
 
@@ -51,7 +51,7 @@ const pausa = async() => {
 
   console.log('\n');
 
-  await inquier.prompt(questions);
+  await inquirer.prompt(questions);
 
 }
 
@@ -71,7 +71,7 @@ const leerInput = async(message) => {
     }
   ];
 
-  const { desc } = await inquier.prompt(questions);
+  const { desc } = await inquirer.prompt(questions);
   return desc;
 
 }
@@ -103,7 +103,7 @@ const listadoTareasBorrar = async(tareas = []) => {
     }
   ];
 
-  const { id } = await inquier.prompt(questions);
+  const { id } = await inquirer.prompt(questions);
   return id;
 
 }
@@ -118,7 +118,7 @@ const confirmar = async(message) => {
       }
     ];
   
-    const { ok } = await inquier.prompt(question);
+    const { ok } = await inquirer.prompt(question);
     return ok;
   
 }
@@ -147,7 +147,7 @@ const mostrarListadoChecklist = async(tareas = []) => {
       }
     ];
   
-    const { ids } = await inquier.prompt(question);
+    const { ids } = await inquirer.prompt(question);
     return ids;
   
 }
