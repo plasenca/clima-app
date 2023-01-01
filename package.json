@@ -1,0 +1,13 @@
+{
+  "name": "clima-app",
+  "version": "1.0.0",
+  "description": "App CLI to see the wheather in any city",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": "https://github.com/plasenca/clima-app.git",
+  "author": "plasenca",
+  "license": "MIT"
+}
