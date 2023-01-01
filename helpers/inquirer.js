@@ -32,9 +32,9 @@ const iquirerMenu = async() => {
   console.log('    Seleccione una opción'.white);
   console.log('==========================='.green);
 
-  const {opcion} = await inquier.prompt(questions);
+  const {option} = await inquier.prompt(questions);
 
-  return opcion;
+  return option;
 
 }
 
@@ -60,7 +60,7 @@ const leerInput = async(message) => {
   const questions = [
     {
       type: 'input',
-      name: 'desc',
+      name: 'description',
       message,
       validate(value) {
         if (value.length === 0) {

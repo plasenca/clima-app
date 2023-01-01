@@ -9,5 +9,8 @@
   },
   "repository": "https://github.com/plasenca/clima-app.git",
   "author": "plasenca",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.2.2"
+  }
 }
